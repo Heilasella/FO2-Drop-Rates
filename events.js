@@ -1,3 +1,6 @@
+var tryingToReset = false;
+var buffer = 0;
+
 $(".row[id]").on('click', "button", function(){
 	$parent = $(this).parents(".row");
 
@@ -32,12 +35,90 @@ $(".row[id]").on('click', "button", function(){
 $(".row").on('click', "button.show-raw", function(){
 	const enemy = $(this).parents(".row").attr("id");
 	showRaw(enemy);
+	$("#table").css("user-select", "none");
 	$("#raw-display").show();
 });
 
+$("#top").on('click', "button.show-raw-all", function(){
+	showRawAll();
+	$("#table").css("user-select", "none");
+	$("#raw-display").show();
+});
+
+$("#top").on('click', "button.reset", function(){
+	if(!tryingToReset)
+	{
+		tryingToReset = true;
+		$(this).text("CONFIRM?!");
+	}
+	else
+	{
+		$(this).text("RESET!");
+		reset();
+		location.reload();
+	}
+});
+
+$(document).on('click', function(e){
+	if(tryingToReset && !$(e.target).hasClass("reset"))
+	{
+		tryingToReset = false;
+		$("#top button.reset").text("RESET!");
+	}
+});
+
 $("#raw-display").on('click', "button.close", function(){
+	$("#table").css("user-select", "text");
 	$(this).siblings("pre").empty();
 	$(this).parents("#raw-display").hide();
+});
+
+function isNumber(n){
+  return !isNaN(parseFloat(n)) && isFinite(n);
+}
+
+$("[class*='count']").on('focus', function(e){
+	$(this).select();
+	buffer = $(this).text();
+});
+
+$("[class*='count']").keydown(function(e){
+	if(e.keyCode == 13)
+	{
+		e.preventDefault();
+
+		const newCount = parseInt($(this).text());
+
+		if(isNumber(newCount))
+		{
+			$parent = $(this).parents(".row");
+	
+			const enemy = $parent.attr("id");
+			const key = Object.keys($(this).data())[0];
+	
+			if(key == "killed")
+				DropTable[enemy][key] = newCount;
+			else
+				DropTable[enemy].drops[key].count = newCount;
+	
+			$(this).empty().text(newCount);
+	
+			updateRates($parent);
+	
+			localStorage.FO2_DropTable = JSON.stringify(DropTable);
+		}
+		else
+		{
+			$(this).empty().text(buffer);
+		}
+
+		$(this).blur();
+	}
+	if(e.keyCode == 0x1B)
+	{
+		e.preventDefault();
+		$(this).blur();
+	}
 });
 
 $(document).keydown(function(e) {
@@ -70,5 +151,17 @@ $(document).keydown(function(e){
 	if(searching && e.keyCode == 0x1B)
 	{
 		$("#search").hide().val("");
+	}
+});
+
+$(document).on('mousedown', function(e){
+	const $target = $(e.target);
+
+	console.log($target);
+
+	if($target.is("body") || $target.is("html"))
+	{
+		e.preventDefault();
+		window.getSelection().removeAllRanges();
 	}
 });
