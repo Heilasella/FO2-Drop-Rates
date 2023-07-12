@@ -16,13 +16,19 @@
 		<pre></pre>
 		<button class="close"></button>
 	</span>
+
+	<span id="table">
+		<span id="top">
+			<button class="show-raw-all">show raw all</button>
+			<button class="reset">RESET!</button>
+		</span>
+	</span>
+
+	<script>
+		updateLocalStorage();
+		generateRows();
+	</script>
+	
+	<script src="events.js"></script>
 </body>
-
-<script>
-	updateLocalStorage();
-	generateRows();
-</script>
-
-<script src="events.js"></script>
-
 </html>
