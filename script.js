@@ -4,13 +4,11 @@ searching = false;
 
 function showRawAll()
 {
-	for(const key in DropTable)
+	for(const enemy in DropTable)
 	{
-		const name = DropTable[key].name;
-		const killed = DropTable[key].killed;
-
-		//var string = name 
+		showRaw(enemy);
 	}
+	$("#raw-display").show();
 }
 
 function showRaw(enemy)
@@ -18,16 +16,19 @@ function showRaw(enemy)
 	const name = DropTable[enemy].name;
 	const killed = DropTable[enemy].killed;
 
-	var str = name + ";" + killed + "\n\n";
+	var str = name + ";" + killed + "\n";
 
 	for(const item in DropTable[enemy].drops)
 	{
 		const itemName = DropTable[enemy].drops[item].name;
 		const count = DropTable[enemy].drops[item].count;
-		str += itemName + ";" + count + "\n";
+		const rate = (parseInt(count) / parseInt(killed)).toFixed(4);
+		str += itemName + ";" + count + ";" + rate + "\n";
 	}
 
-	$("#raw-display pre").text(str);
+	str += "\n";
+
+	$("#raw-display pre").append(str);
 }
 
 function updateLocalStorage()
@@ -77,6 +78,12 @@ function updateLocalStorage()
 	}
 }
 
+function reset()
+{
+	// DANGEROUS!
+	delete localStorage.FO2_DropTable;
+}
+
 function updateRates($element)
 {
 	if(DropTable === null)
@@ -116,20 +123,28 @@ function generateRows()
 		const enemyName = obj.name;
 		const killed = obj.killed;
 
-		$button = function(key, value)
+		$counter = function(key, value)
 		{
+			var c = "count";
+			if(key == "killed") c = "kill-" + c;
+
+			const $count = $("<label>").attr("contenteditable", true).addClass(c).text(value).data(key, value);
 			const $add = $("<button>").addClass("add").text("+").data(key, value);
 			const $rem = $("<button>").addClass("rem").text("-").data(key, value);
-			return $("<span>").addClass("buttons").append($add, $rem);
+			return [$count, $("<span>").addClass("buttons").append($add, $rem)];
 		};
 
-		$row = $("<span>").addClass("row").attr("id", enemy).appendTo("body");
-		$enemy = $("<span>").addClass("enemy").appendTo($row).append($button("killed", killed));;
+		$row = $("<span>").addClass("row").attr("id", enemy).appendTo("#table");
+		
+		// grid elements of $row
 		$items = $("<span>").addClass("items").appendTo($row);
+		$kills = $("<span>").addClass("kills").append($counter("killed", killed)).appendTo($row);
+		$filters = $("<span>").addClass("filters").appendTo($row);
+		// name
+		$("<span>").addClass("enemy-name").text(enemyName).prependTo($row);
 
-		$("<button>").addClass("show-raw").text("show raw").appendTo($row);
-		$("<span>").addClass("kill-count").text(killed).prependTo($enemy);
-		$("<label>").addClass("enemy-name").text(enemyName).prependTo($enemy);
+		//$("<label>").addClass("kill-count").text(killed).prependTo($kills);
+		$("<button>").addClass("show-raw").text("show raw").appendTo($filters);
 
 		const items = obj.drops;
 
@@ -138,8 +153,8 @@ function generateRows()
 			const itemName = items[item].name;
 			const count = items[item].count;
 
-			$item = $("<span>").addClass("item").appendTo($items).append($button(item, count));
-			$("<span>").addClass("count").prependTo($item).text(count);
+			$item = $("<span>").addClass("item").appendTo($items).append($counter(item, count));
+			//$("<span>").addClass("count").prependTo($item).text(count);
 			$("<label>").text(itemName).prependTo($item);
 
 			const rate = (parseInt(count) / parseInt(killed) * 100).toFixed(2);
