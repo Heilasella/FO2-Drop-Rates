@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FO2</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script src="data.js"></script>
+	<script src="script.js"></script>
+</head>
+
+<body>
+	<input type="text" id="search">
+	<span id="raw-display">
+		<pre></pre>
+		<button class="close"></button>
+	</span>
+</body>
+
+<script>
+	updateLocalStorage();
+	generateRows();
+</script>
+
+<script src="events.js"></script>
+
+</html>
