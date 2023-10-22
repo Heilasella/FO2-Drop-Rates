@@ -30,6 +30,7 @@ const FO2DataObj =
 		drops:
 		{
 			adult_diapers: {name: "Adult Diapers", count:0},
+			tighty_off_whities: {name: "Tighty Off-Whities", count:0},
 		}
 	},
 	pumpkinhead:
@@ -92,6 +93,7 @@ const FO2DataObj =
 		drops:
 		{
 			woodsmans_axe: {name: "Woodsman's Axe", count:0},
+			dirty_undershirt: {name: "Dirty Undershirt", count:0},
 		}
 	},
 	recruit_of_evil:
@@ -176,6 +178,7 @@ const FO2DataObj =
 		{
 			crab_claw: {name: "Crab Claw", count:0},
 			royal_crab_jelly_clump: {name: "Royal Crab Jelly Clump", count:0},
+			ring_of_crabbiness: {name: "Ring of Crabbiness", count: 0},
 		}
 	},
 	evil_mcbadguy:
@@ -244,6 +247,7 @@ const FO2DataObj =
 		{
 			crab_helmet: {name: "Crab Helmet", count:0},
 			jumbo_crab_claw: {name: "Jumbo Crab Claw", count:0},
+			ring_of_crabbiness: {name: "Ring of Crabbiness", count: 0},
 		}
 	},
 	failed_spider_hunter:
@@ -356,6 +360,7 @@ const FO2DataObj =
 		{
 			lucky_8_skull: {name: "Lucky 8 Skull", count:0},
 			long_sword: {name: "Long Sword", count:0},
+			basic_magic_staff: {name: "Basic Magic Staff", count:0},
 		}
 	},
 	skele_champion:
@@ -369,4 +374,85 @@ const FO2DataObj =
 			small_health_potion: {name: "Small Health Potion", count:0},
 		}
 	},
+	ex_miners:
+	{
+		killed: 0,
+		name: "Ex Miners",
+		drops:
+		{
+			health_insurance_card: {name: "Health Insurance Card", count:0},
+			gold_nougat: {name: "Gold Nougat", count:0},
+			dead_canary: {name: "Dead Canary", count:0},
+		}
+	},
+	ex_diggers:
+	{
+		killed: 0,
+		name: "Ex Diggers",
+		drops:
+		{
+			health_insurance_card: {name: "Health Insurance Card", count:0},
+			gold_nougat: {name: "Gold Nougat", count:0},
+			dead_canary: {name: "Dead Canary", count:0},
+			medium_health_potion: {name: "Medium Health Potion", count:0},
+		}
+	},
+	baby_skull_spider:
+	{
+		killed: 0,
+		name: "Baby Skull Spider",
+		drops:
+		{
+			spider_guts: {name: "Spider Guts", count:0},
+			small_energy_potion: {name: "Small Energy Potion", count:0},
+			gold_ring: {name: "Gold Ring", count:0},
+		}
+	},
+	giant_skull_spider:
+	{
+		killed: 0,
+		name: "Giant Skull Spider",
+		drops:
+		{
+			spider_guts: {name: "Spider Guts", count:0},
+			small_skull_shield: {name: "Small Skull Shield", count:0},
+			goth_staff: {name: "Goth Staff", count:0},
+			spider_bow: {name: "Spider Bow", count:0},
+		}
+	},
+	pebble:
+	{
+		killed: 0,
+		name: "Pebble",
+		drops:
+		{
+			gold_nougat: {name: "Gold Nougat", count:0},
+			rock_dust: {name: "Rock Dust", count:0},
+		}
+	},
+	stone:
+	{
+		killed: 0,
+		name: "Stone",
+		drops:
+		{
+			the_rock: {name: "The Rock", count:0},
+			stone_boots: {name: "Stone Boots", count:0},
+			gold_nougat: {name: "Gold Nougat", count:0},
+			stone_hammer: {name: "Stone Hammer", count:0},
+		}
+	},
+	boulder_colorado:
+	{
+		killed: 0,
+		name: "Boulder Colorado",
+		drops:
+		{
+			the_rock: {name: "The Rock", count:0},
+			stone_boots: {name: "Stone Boots", count:0},
+			gold_nougat: {name: "Gold Nougat", count:0},
+			stone_hammer: {name: "Stone Hammer", count:0},
+		}
+	},
+
 }
