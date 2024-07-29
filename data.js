@@ -454,7 +454,8 @@ const FO2DataObj =
 			stone_hammer: {name: "Stone Hammer", count:0},
 		}
 	},
-{
+	small_red_slime:
+	{
 		killed: 0,
 		name: "Small Red Slime",
 		drops:
