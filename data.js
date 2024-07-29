@@ -807,6 +807,18 @@ const FO2DataObj =
 			igneuous_staff: {name: "Igneuos Staff", count:0},
 		}
 	},
+	ogre_miner:
+	{
+		killed: 0,
+		name: "Ogre Miner",
+		drops:
+		{
+			singed_diaper: {name: "Singed Diaper", count:0},
+			ogre_hawk: {name: "Ogre-hawk", count:0},
+			empty_satchel: {name: "Empty Satchel", count:0},
+			satchel_of_gold_nuggets: {name: "Satchel of Gold Nuggets", count:0},
+		}
+	},
 	destoyer_of_mind:
 	{
 		killed: 0,
@@ -815,7 +827,6 @@ const FO2DataObj =
 		{
 			despairite: {name: "Despairite", count:0},
 			bow_base: {name: "Bow Base", count:0},
-
 		}
 	},
 	destoyer_of_will:
