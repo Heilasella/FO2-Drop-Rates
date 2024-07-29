@@ -741,5 +741,103 @@ const FO2DataObj =
 			silver_crab_relic: {name: "Silver Crab Relic", count:0},
 		}
 	},
+	evil_bat:
+	{
+		killed: 0,
+		name: "Evil Bat",
+		drops:
+		{
+			bat_wing: {name: "Bat Wing", count:0},
+			bat_ring: {name: "Bat Ring", count:0},
+			dark_shield: {name: "Dark Shield", count:0},
+		}
+	},
+	lost_skele:
+	{
+		killed: 0,
+		name: "Lost Skele",
+		drops:
+		{
+			medium_health_potion: {name: "Medium Health Potion", count:0},
+			plastic_torch: {name: "Plastic Torch", count:0},
+			bone_helm: {name: "Bone Helm", count:0},
+			warriors_bone_helm: {name: "Warrior's Bone Helm", count:0}
+		}
+	},
+	fallen_skele:
+	{
+		killed: 0,
+		name: "Fallen Skele",
+		drops:
+		{
+			note_to_mom: {name: "Note to Mom", count:0},
+			fallen_horn: {name: "Fallen Horn", count:0},
+			magical_fire_ring: {name: "Magical Fire Ring", count:0},
+		}
+	},
+	small_molten_slime:
+	{
+		killed: 0,
+		name: "Small Molten Slime",
+		drops:
+		{
+			small_molten_goo: {name: "Small Molten Goo", count:0},
+			cooked_ogre_meat: {name: "Cooked Ogre Meat", count:0},
+		}
+	},
+	molten_slime:
+	{
+		killed: 0,
+		name: "Molten Slime",
+		drops:
+		{
+			large_molten_goo: {name: "Large Molten Goo", count:0},
+			cooked_ogre_meat: {name: "Cooked Ogre Meat", count:0},
+			molten_goo_pauldrons: {name: "Molten Goo Pauldrons", count:0},
+		}
+	},
+	destroyling:
+	{
+		killed: 0,
+		name: "Destroyling",
+		drops:
+		{
+			heart_of_despair: {name: "Heart of Despair", count:0},
+			bigger_gold_ring: {name: "Bigger Gold Ring", count:0},
+			igneuous_staff: {name: "Igneuos Staff", count:0},
+		}
+	},
+	destoyer_of_mind:
+	{
+		killed: 0,
+		name: "Destroyer of Mind",
+		drops:
+		{
+			despairite: {name: "Despairite", count:0},
+			bow_base: {name: "Bow Base", count:0},
+
+		}
+	},
+	destoyer_of_will:
+	{
+		killed: 0,
+		name: "Destroyer of Will",
+		drops:
+		{
+			despairite: {name: "Despairite", count:0},
+			weapon_base_2H: {name: "2H Base", count:0},
+
+		}
+	},
+	destoyer_of_faith:
+	{
+		killed: 0,
+		name: "Destroyer of Faith",
+		drops:
+		{
+			despairite: {name: "Despairite", count:0},
+			wand_base: {name: "Wand Base", count:0},
+		}
+	},
 	
 }
