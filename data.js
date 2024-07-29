@@ -454,5 +454,14 @@ const FO2DataObj =
 			stone_hammer: {name: "Stone Hammer", count:0},
 		}
 	},
-
+{
+		killed: 0,
+		name: "Small Red Slime",
+		drops:
+		{
+			small_red_goo: {name: "Small Red Goo", count:0},
+			medium_health_potion: {name: "Medium Health Potion", count:0},
+			crimson_cloak: {name: "Crimson Cloak", count:0},
+		}
+	},
 }
