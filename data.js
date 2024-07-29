@@ -465,4 +465,69 @@ const FO2DataObj =
 			crimson_cloak: {name: "Crimson Cloak", count:0},
 		}
 	},
+	red_slime:
+	{
+		killed: 0,
+		name: "Red Slime",
+		drops:
+		{
+			small_red_goo: {name: "Small Red Goo", count:0},
+			goo_covered_wooden_shield: {name: "Goo Covered Wooden Shield", count:0},
+			big_red_goo: {name: "Big Red Goo", count:0},
+			medium_health_potion: {name: "Medium Health Potion", count:0},
+		}
+	},
+	small_cave_scorp:
+	{
+		killed: 0,
+		name: "Small Cave Scorp",
+		drops:
+		{
+			scorpion_tails: {name: "Scorpion Tails", count:0},
+			scorpion_guts: {name: "Scorpion Guts", count:0},
+			standard_longbow: {name: "Standard Longbow", count:0},
+			quality_large_sword: {name: "Quality Large Sword", count:0},
+			scorpion_shield: {name: "Scorpion Shield", count:0},
+			scorpion_ring: {name: "Scorpion Ring", count:0},
+			scorp_cap: {name: "Scorp Cap", count:0},
+		}
+	},
+	disgruntled_ex_miner:
+	{
+		killed: 0,
+		name: "Disgruntled Ex Miner",
+		drops:
+		{
+			dead_canary: {name: "Dead Canary", count:0},
+			miners_skull: {name: "Miner's Skull", count:0},
+			gold_ring: {name: "Gold Ring", count:0},
+			broken_longbow: {name: "Broken Longbow", count:0},
+			standard_longbow: {name: "Standard Longbow", count:0},
+			quality_longbow: {name: "Quality Longbow", count:0},
+		}
+	},
+	ex_miner_pitboss:
+	{
+		killed: 0,
+		name: "Ex Miner Pitboss",
+		drops:
+		{
+			heavy_ring: {name: "Heavy Ring", count:0},
+			metal_helm: {name: "Metal Helm", count:0},
+			bronze_crab_relic: {name: "Bronze Crab Relic", count:0},
+		}
+	},
+	enraged_scorp:
+	{
+		killed: 0,
+		name: "Enraged Sorp",
+		drops:
+		{
+			scorpion_tails: {name: "Scorpion Tails", count:0},
+			scorpion_guts: {name: "Scorpion Guts", count:0},
+			magical_shield_ring: {name: "Magical Shield Ring", count:0},
+			golden_scorpion_cap: {name: "Golden Scorpion Cap", count:0},
+		}
+	},
+	
 }
