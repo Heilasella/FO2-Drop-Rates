@@ -529,5 +529,217 @@ const FO2DataObj =
 			golden_scorpion_cap: {name: "Golden Scorpion Cap", count:0},
 		}
 	},
+	wood_imp:
+	{
+		killed: 0,
+		name: "Wood Imp",
+		drops:
+		{
+			torn_cloth: {name: "Torn Cloth", count:0},
+			fun_sized_candy_bar: {name: "Fun Sized Candy Bar", count:0},
+			meadium_energy_potion: {name: "Medium Energy Potion", count:0},
+			brown_imp_ear: {name: "Brown Imp Ear", count:0},
+		}
+	},
+	wood_ant:
+	{
+		killed: 0,
+		name: "Wood Ant",
+		drops:
+		{
+			ant_mandibles: {name: "Ant Mandibles", count:0},
+			ring_of_ants: {name: "Ring of Ants", count:0},
+			pheromone_of_diligence: {name: "Phereomone of Diligence", count:0},
+		}
+	},
+	green_imp:
+	{
+		killed: 0,
+		name: "Green Imp",
+		drops:
+		{
+			torn_cloth: {name: "Torn Cloth", count:0},
+			meadium_energy_potion: {name: "Medium Energy Potion", count:0},
+			green_imp_ear: {name: "Green Imp Ear", count:0},
+			full_sized_candy_bar: {name: "Full Sized Candy Bar", count:0},
+			imps_bow: {name: "Imp's Bow", count:0},
+		}
+	},
+	undead_footman:
+	{
+		killed: 0,
+		name: "Undead Footman",
+		drops:
+		{
+			silver_locket: {name: "Silver Locket", count:0},
+			heavy_ring: {name: "Heavy Ring", count:0},
+			quality_large_sword: {name: "Quality Large Sword", count:0},
+			pike: {name: "Pike", count:0},
+			the_franken_cut: {name: "The Franken Cut", count:0},
+			undead_ring_base: {name: "Undead Ring Base", count:0},
+		}
+	},
+
+	werewolf:
+	{
+		killed: 0,
+		name: "Werewolf",
+		drops:
+		{
+			red_chewtoy: {name: "Red Chewtoy", count:0},
+			werewolf_claw: {name: "Werewolf Claw", count:0},
+			lunar_fang: {name: "Lunar Fang", count:0},
+			treasure_of_wisdom: {name: "Treasure of Wisdom", count:0},
+		}
+	},
+	the_alpha:
+	{
+		killed: 0,
+		name: "The Alpha",
+		drops:
+		{
+			werewolf_claw: {name: "Werewolf Claw", count:0},
+			moon_talisman: {name: "Moon Talisman", count:0},
+			howlers_edge: {name: "Howler's Edge", count:0},
+			treasure_of_wisdom: {name: "Treasure of Wisdom", count:0},
+		}
+	},
+	small_clam:
+	{
+		killed: 0,
+		name: "Small Clam",
+		drops:
+		{
+			clam_leg_armour: {name: "Clam Leg Armour", count:0},
+			clam_chowder: {name: "Clam Chowder", count:0},
+			clam_helmet: {name: "Clam Helmet", count:0},
+			pearl: {name: "Pearl", count:0},
+			treasure_of_wisdom: {name: "Treasure of Wisdom", count:0},
+		}
+	},
+	big_clam:
+	{
+		killed: 0,
+		name: "Big Clam",
+		drops:
+		{
+			clam_body_armour: {name: "Clam Body Armour", count:0},
+			clam_chowder: {name: "Clam Chowder", count:0},
+			clam_helmet: {name: "Clam Helmet", count:0},
+			pearl: {name: "Pearl", count:0},
+			treasure_of_wisdom: {name: "Treasure of Wisdom", count:0},
+		}
+	},
+	ogre_brute:
+	{
+		killed: 0,
+		name: "Ogre Brute",
+		drops:
+		{
+			cracked_ogre_tusk: {name: "Cracked Ogre Tusk", count:0},
+			ogre_meat: {name: "Ogre Meat", count:0},
+			forest_light_leg_armour: {name: "Forest Light Leg Armour", count:0},
+			forest_light_body_armour: {name: "Forest Light Body Armour", count:0},
+		}
+	},
+	undead_cook:
+	{
+		killed: 0,
+		name: "Undead Cook",
+		drops:
+		{
+			raw_potato: {name: "Raw Potato", count:0},
+			food_handlers_permit: {name: "Food Handler's Permit", count:0},
+			sapphire_wand: {name: "Sapphire Wand", count:0},
+			undead_ring_base: {name: "Undead Ring Base", count:0},
+		}
+	},
+	undead_chef:
+	{
+		killed: 0,
+		name: "Undead Chef",
+		drops:
+		{
+			jug_of_regrets: {name: "Jug of Regrets", count:0},
+			worn_cloth: {name: "Worn Cloth", count:0},
+			tunic_of_culinary_mediocrity: {name: "Tunic of Culinary Mediocrity", count:0},
+			treasure_of_might: {name: "Treasure of Might", count:0},
+			undead_ring_base: {name: "Undead Ring Base", count:0},
+		}
+	},
+	undead_master_chef:
+	{
+		killed: 0,
+		name: "Undead Chef",
+		drops:
+		{
+			spud_shooter: {name: "Spud Shooter", count:0},
+			treasure_of_might: {name: "Treasure of Might", count:0},
+			undead_ring_base: {name: "Undead Ring Base", count:0},
+		}
+	},
+	undead_soldier:
+	{
+		killed: 0,
+		name: "Undead Soldier",
+		drops:
+		{
+			undead_for_dummies: {name: "Undead for Dummies", count:0},
+			broken_longbow: {name: "Broken Longbow", count:0},
+			royal_shield: {name: "Royal Shield", count:0},
+			unliving_sword: {name: "Unliving Sword", count:0},
+			unliving_bow: {name: "Unliving Bow", count:0},
+			undead_ring_base: {name: "Undead Ring Base", count:0},
+		}
+	},
+	undead_guard:
+	{
+		killed: 0,
+		name: "Undead Guard",
+		drops:
+		{
+			brutal_axe: {name: "Brutal Axe", count:0},
+			unliving_sword: {name: "Unliving Sword", count:0},
+			unliving_bow: {name: "Unliving Bow", count:0},
+			undead_ring_base: {name: "Undead Ring Base", count:0},
+			silver_crab_relic: {name: "Silver Crab Relic", count:0},
+		}
+	},
+	ogre_warrior:
+	{
+		killed: 0,
+		name: "Ogre Warrior",
+		drops:
+		{
+			cracked_ogre_tusk: {name: "Cracked Ogre Tusk", count:0},
+			ogre_meat: {name: "Ogre Meat", count:0},
+			horned_ogre_helm: {name: "Horned Ogre Helm", count:0},
+			treasure_of_endurance: {name: "Treasure of Endurance", count:0},
+			forest_hammer: {name: "Forest Hammer", count:0},
+		}
+	},
+	ogre_champion:
+	{
+		killed: 0,
+		name: "Ogre Champion",
+		drops:
+		{
+			ogre_hawk: {name: "Ogre Hawk", count:0},
+			the_rib_tickler: {name: "The Rib Tickler", count:0},
+			treasure_of_endurance: {name: "Treasure of Endurance", count:0},
+			spiked_pauldrons: {name: "Spiked Pauldrons", count:0},
+		}
+	},
+	mcbadguy_redux:
+	{
+		killed: 0,
+		name: "McBadguy Redux",
+		drops:
+		{
+			unliving_sword: {name: "Unliving Sword", count:0},
+			undead_ring_base: {name: "Undead Ring Base", count:0},
+			silver_crab_relic: {name: "Silver Crab Relic", count:0},
+		}
+	},
 	
 }
