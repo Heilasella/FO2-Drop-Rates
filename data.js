@@ -783,6 +783,7 @@ const FO2DataObj =
 		{
 			small_molten_goo: {name: "Small Molten Goo", count:0},
 			cooked_ogre_meat: {name: "Cooked Ogre Meat", count:0},
+			molten_goo_pauldrons: {name: "Molten Goo Pauldrons", count:0},
 		}
 	},
 	molten_slime:
