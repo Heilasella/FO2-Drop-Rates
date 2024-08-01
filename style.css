@@ -21,15 +21,36 @@ body {
 	gap: var(--gap);
 }
 
-.row {
-	user-select: text;
-	display: grid;
-	padding: var(--gap);
-	gap: var(--gap);
-	width: fit-content;
-	background: #c3f5b3;
-	border-radius: 5px;
+row {
+    user-select: text;
+    display: grid;
+    padding: var(--gap);
+    gap: var(--gap);
+    width: fit-content;
+    background: #c3f5b3;
+    border-radius: 5px;
 }
+
+.row.collapsed .items,
+.row.collapsed .kills,
+.row.collapsed .filters {
+    display: none;
+}
+
+.row .toggle-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.row.expanded .toggle-btn::after {
+    content: "-";
+}
+
+.row.collapsed .toggle-btn::after {
+    content: "+";
 
 .row > .enemy-name {
 	grid-column: 1/3;
