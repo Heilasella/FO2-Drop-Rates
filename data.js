@@ -651,6 +651,7 @@ const FO2DataObj =
 			raw_potato: {name: "Raw Potato", count:0},
 			food_handlers_permit: {name: "Food Handler's Permit", count:0},
 			sapphire_wand: {name: "Sapphire Wand", count:0},
+			worn_cloth: {name: "Worn Cloth", count:0},
 			undead_ring_base: {name: "Undead Ring Base", count:0},
 		}
 	},
